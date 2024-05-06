@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:root {
+  --primary--color: linear-gradient(#7755ff, #2f2ce9);
+}
+
+.card {
+  width: 375px;
+  height: 809px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  border-radius: 0 0 32px 32px;
+  background-image: var(--primary--color);
+  color: white;
+}
+.card__tittle {
+  font-size: 18px;
+  color: #cac9ff;
+}
+
+.card__container--circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background-image: linear-gradient(#4d21c9, transparent);
+}
+
+.card__number {
+  width: 63px;
+  font-weight: 800;
+  font-size: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__number--small {
+  color: #303b59;
+  font-size: 16px;
+}
+
+.card__number--span {
+  font-size: 16px;
+  color: #cac9ff;
+  font-weight: 700;
+}
+
+.card__tittle--white {
+  font-size: 24px;
+  margin: 0;
+}
+.card__container--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.card__text {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #cac9ff;
+  padding-bottom: 40px;
+}
+
+.card__container--white {
+  width: 375px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.card__container--small {
+  width: 315px;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__tittle--grey {
+  color: #303b59;
+}
+.card--small {
+  width: 315px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.card__text--small {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card__image-container {
+  width: 95px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__span--small {
+  color: rgba(48, 59, 89, 40%);
+}
+.card--red {
+  color: #ff5555;
+  background-color: rgba(255, 85, 85, 5%);
+}
+
+.card--yellow {
+  color: #ffb21e;
+  background-color: rgba(255, 178, 30, 5%);
+}
+
+.card--green {
+  color: #00bb8f;
+  background-color: rgba(0, 187, 143, 5%);
+}
+
+.card--blue {
+  color: #1125d6;
+  background-color: rgba(17, 37, 214, 5%);
+}
+
+.button {
+  background-color: #303b59;
+  width: 315px;
+  height: 56px;
+  border-radius: 128px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #ecf2ff;
+  }
+
+  .card {
+    width: 736px;
+    height: 512px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 32px;
+  }
+
+  .card__container {
+    border-radius: 32px;
+    height: 512px;
+    width: 368px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .card__container--circle {
+    width: 200px;
+    height: 200px;
+  }
+  .card__tittle {
+    font-size: 24px;
+  }
+
+  .card__number {
+    font-size: 72px;
+  }
+
+  .card__number--span {
+    font-size: 18px;
+  }
+
+  .card__tittle--white {
+    font-size: 32px;
+  }
+
+  .card__container--text {
+    margin-top: 28px;
+  }
+
+  .card__text {
+    font-size: 16px;
+    height: 69px;
+    width: 260px;
+    margin-top: 14px;
+    padding-bottom: 55px;
+  }
+
+  .card__container--white {
+    height: 512px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+
+  .card__container--small {
+    width: 288px;
+    height: 369px;
+  }
+
+  .card--small {
+    width: 288px;
+  }
+
+  .button {
+    width: 288px;
+    height: 56px;
+  }
+
+  .button:hover {
+    background-image: var(--primary--color);
+  }
+}
