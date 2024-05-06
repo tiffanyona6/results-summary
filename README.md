@@ -1,4 +1,4 @@
-# Título del proyecto
+# Results Summary
 
 ![Imagen del proyecto](https://raw.githubusercontent.com/tiffanyona6/results-summary/main/imagenes%20readme./desktop-preview.jpg)
 
